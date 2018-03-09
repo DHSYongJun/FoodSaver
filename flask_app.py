@@ -63,7 +63,7 @@ def index():
 
 @app.route('/help/')
 def settings():
-        return render_template('settings.html')
+        return render_template('help.html')
 
 @app.route("/input/", methods=['GET', 'POST'])
 def AddFood():
