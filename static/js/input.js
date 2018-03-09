@@ -1,0 +1,3 @@
+$(function() {
+	$( ".dtpick" ).datepicker();
+});
