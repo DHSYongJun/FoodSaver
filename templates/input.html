@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FoodSaver</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/input.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="/static/js/input.js"></script>
+
+</head>
+
+<body>
+
+<body>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/help/">Help</a>
+      </li>
+    </ul>
+    <form class="form-horizontal" action="/input/" method="POST">
+        <fieldset>
+
+            <div>
+                {{ form.csrf_token }}
+                {{form.name.label}}<br>
+                {{form.name(class="form-control input-md")}}<br>
+                {{form.purchase.label}}<br>
+                {{form.purchase(class="dtpick form-control input-md")}}<br>
+                {{form.expiry.label}}<br>
+                {{form.expiry(class="dtpick form-control input-md")}}<br>
+                {{form.quantity.label}}<br>
+                {{form.quantity(class="form-control input-md")}}<br>
+                {{form.typequantity.label}}<br>
+                {{form.typequantity(class="form-control input-md")}}<br>
+                {{form.group.label}}<br>
+                {{form.group(class="form-control input-md")}}<br>
+                {{form.submit(class="btn btn-primary")}}<br>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+
+</html>
